@@ -435,17 +435,10 @@ export default function Portfolio() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button
-                        variant="outline"
-                        size="icon"
-                        className="rounded-full border-black hover:border-black/70 text-black bg-transparent hover:bg-black/5 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
-                      >
+                      <Button>
                         <Github className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                       </Button>
                     </a>
-                    <span className="absolute -top-8 sm:-top-10 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                      GitHub Profile
-                    </span>
                   </div>
 
                   <div className="relative group">
@@ -454,17 +447,10 @@ export default function Portfolio() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <Button
-                        variant="outline"
-                        size="icon"
-                        className="rounded-full border-black hover:border-black/70 text-black bg-transparent hover:bg-black/5 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
-                      >
+                      <Button>
                         <Linkedin className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                       </Button>
                     </a>
-                    <span className="absolute -top-8 sm:-top-10 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                      LinkedIn Profile
-                    </span>
                   </div>
 
                   <div className="relative group">
@@ -472,17 +458,10 @@ export default function Portfolio() {
                       href="cv/Rizqi Aditya Pratama-resume.pdf"
                       download="Rizqi_Aditya_Pratama_Resume.pdf"
                     >
-                      <Button
-                        variant="outline"
-                        size="icon"
-                        className="rounded-full border-black hover:border-black/70 text-black bg-transparent hover:bg-black/5 w-8 h-8 sm:w-10 sm:h-10 md:w-12 md:h-12"
-                      >
+                      <Button>
                         <Download className="h-3 w-3 sm:h-4 sm:w-4 md:h-5 md:w-5" />
                       </Button>
                     </a>
-                    <span className="absolute -top-8 sm:-top-10 left-1/2 -translate-x-1/2 bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none whitespace-nowrap">
-                      Download CV
-                    </span>
                   </div>
                 </div>
               </div>
