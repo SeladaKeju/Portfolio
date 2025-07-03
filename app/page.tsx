@@ -420,7 +420,7 @@ export default function Portfolio() {
                 <div className="space-y-3 sm:space-y-4 md:space-y-6">
                   <p className="text-sm sm:text-base md:text-lg text-black/80 leading-relaxed">
                     I’m Rizqi Aditya Pratama, currently pursuing my D3 in
-                    Informatics Engineering at Politeknik Negeri Semarang while
+                    Informatics Engineering at Semarang State Polytechnic while
                     exploring new technologies and growing my skills in
                     fullstack web development. Passionate about creating
                     user-friendly digital solutions and solving real-world
