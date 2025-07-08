@@ -28,32 +28,23 @@ function useHasMounted() {
 }
 
 export default function Portfolio() {
-  const [resetKey, setResetKey] = useState(0);
-
-  // State untuk header dinamis - ubah ke putih sebagai default
-  const [activeSection, setActiveSection] = useState("hero");
-
   // Ubah warna header default ke putih
   const [headerColor, setHeaderColor] = useState("#FFFFFF");
   const [headerTextColor, setHeaderTextColor] = useState("text-black");
+  const [headerVisible, setHeaderVisible] = useState(true);
 
   // Add state for header visibility with improved scroll detection
-  const [headerVisible, setHeaderVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
-  const [scrollDirection, setScrollDirection] = useState("up");
 
   // Update fungsi untuk warna header - semua section menggunakan header putih
-  const updateHeaderColor = (section: string) => {
-    console.log(`Section changed to: ${section}`);
-    setActiveSection(section);
-
+  const updateHeaderColor = () => {
     // Semua section menggunakan header putih dengan teks hitam
     setHeaderColor("#FFFFFF");
     setHeaderTextColor("text-black");
   };
 
   useEffect(() => {
-    updateHeaderColor("hero");
+    updateHeaderColor();
   }, []);
 
   // Referensi untuk setiap section
@@ -332,7 +323,7 @@ export default function Portfolio() {
         className="h-screen flex items-center justify-center px-3 sm:px-4 md:px-6 bg-white relative overflow-hidden"
         onViewportEnter={() => {
           console.log("Hero in view");
-          updateHeaderColor("hero");
+          updateHeaderColor();
         }}
         viewport={{ amount: 0.3, once: true }}
       >
@@ -455,7 +446,7 @@ export default function Portfolio() {
 
                   <div className="relative group">
                     <a
-                      href="cv/Rizqi Aditya Pratama-resume.pdf"
+                      href="cv/Rizqi Aditya Pratama - Resume.pdf"
                       download="Rizqi_Aditya_Pratama_Resume.pdf"
                     >
                       <Button>
@@ -569,7 +560,7 @@ export default function Portfolio() {
         className="min-h-screen flex items-center px-3 sm:px-4 md:px-6 bg-white py-12 sm:py-16 md:py-20"
         onViewportEnter={() => {
           console.log("Skills in view");
-          updateHeaderColor("skills");
+          updateHeaderColor();
         }}
         viewport={{ amount: 0.3, once: true }}
       >
@@ -605,7 +596,7 @@ export default function Portfolio() {
         className="min-h-screen flex items-center px-3 sm:px-4 md:px-6 bg-white py-12 sm:py-16 md:py-20"
         onViewportEnter={() => {
           console.log("Certifications in view");
-          updateHeaderColor("certifications");
+          updateHeaderColor();
         }}
         viewport={{ amount: 0.3, once: true }}
       >
@@ -664,7 +655,7 @@ export default function Portfolio() {
           <div className="bg-black p-4 sm:p-6 md:p-8 flex items-center justify-center min-h-[200px] sm:min-h-[220px] md:min-h-[240px]">
             <div className="w-full">
               <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 sm:mb-5 md:mb-6 text-white">
-                Let's Work Together
+                Let&apos;s Work Together
               </h2>
 
               <div className="mb-4 sm:mb-5 md:mb-6">
@@ -682,7 +673,7 @@ export default function Portfolio() {
               </div>
 
               <p className="text-sm sm:text-base md:text-lg text-white/80 leading-relaxed max-w-xl mx-auto px-2">
-                Have a project in mind? I'd love to hear about it. Let's discuss
+                Have a project in mind? I&apos;d love to hear about it. Let&apos;s discuss
                 how we can bring your ideas to life.
               </p>
             </div>
