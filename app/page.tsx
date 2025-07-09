@@ -446,7 +446,7 @@ export default function Portfolio() {
 
                   <div className="relative group">
                     <a
-                      href="cv/Rizqi Aditya Pratama - Resume.pdf"
+                      href="cv/Rizqi Aditya Pratama - Resume fix.pdf"
                       download="Rizqi_Aditya_Pratama_Resume.pdf"
                     >
                       <Button>
